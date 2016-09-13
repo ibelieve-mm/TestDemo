@@ -21,4 +21,11 @@
         android:layout_height="50dp"
         android:background="#123" />
 
+    <com.cme.mm.testdemo.widgets.TextView.XTextView1
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="你好定制TextView"
+        android:textColor="#ff9352"
+        android:padding="10px"
+        android:textSize="18sp" />
 </LinearLayout>
