@@ -1,4 +1,4 @@
-package com.cme.mm.testdemo.widgets.TextView;
+package com.cme.mm.testdemo.widgets.text_view;
 
 import android.content.Context;
 import android.graphics.Canvas;
