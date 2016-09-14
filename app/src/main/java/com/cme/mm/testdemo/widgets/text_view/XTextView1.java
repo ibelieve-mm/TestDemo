@@ -11,7 +11,11 @@ import android.util.AttributeSet;
 import android.widget.TextView;
 
 /**
- * Created by Administrator on 2016/9/12.
+ * Descriptions：闪动的TextView，类似于iOS中锁屏界面中“滑动来解锁”的效果
+ * <p/>
+ * Author：ChenME
+ * Date：2016/9/14
+ * Email：ibelieve1210@163.com
  */
 public class XTextView1 extends TextView {
     public XTextView1(Context context) {
@@ -52,7 +56,7 @@ public class XTextView1 extends TextView {
         super.onDraw(canvas);
         if (null != mGradientMatrix) {
             mTranslate += mViewWidth / 10;
-            if (mTranslate >  mViewWidth) {
+            if (mTranslate > mViewWidth) {
                 mTranslate = -mViewWidth;
             }
             mGradientMatrix.setTranslate(mTranslate, 0);

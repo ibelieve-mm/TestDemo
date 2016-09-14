@@ -10,7 +10,11 @@ import android.util.AttributeSet;
 import android.view.View;
 
 /**
- * Created by Administrator on 2016/9/14.
+ * Descriptions：模仿音乐播放器中音频条形图
+ * <p/>
+ * Author：ChenME
+ * Date：2016/9/14
+ * Email：ibelieve1210@163.com
  */
 public class AudioBarView extends View {
 

@@ -7,6 +7,13 @@ import com.cme.mm.testdemo.App;
 import com.cme.mm.testdemo.R;
 import com.cme.mm.testdemo.widgets.complex.TopBar;
 
+/**
+ * Descriptions：
+ * <p/>
+ * Author：ChenME
+ * Date：2016/9/14
+ * Email：ibelieve1210@163.com
+ */
 public class MainActivity extends AppCompatActivity {
 
     private TopBar topBar;

@@ -8,8 +8,11 @@ import android.util.AttributeSet;
 import android.widget.TextView;
 
 /**
- * 为TextView添加两个矩形背景
- * Created by Administrator on 2016/9/12.
+ * Descriptions：为TextView添加两个矩形背景
+ * <p/>
+ * Author：ChenME
+ * Date：2016/9/14
+ * Email：ibelieve1210@163.com
  */
 public class XTextView extends TextView {
     public XTextView(Context context) {

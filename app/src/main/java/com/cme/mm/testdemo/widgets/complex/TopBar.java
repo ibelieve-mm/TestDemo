@@ -13,7 +13,11 @@ import android.widget.TextView;
 import com.cme.mm.testdemo.R;
 
 /**
- * Created by Administrator on 2016/9/13.
+ * Descriptions：自定义的标题栏，中间是标题，左右两边是两个按钮
+ * <p/>
+ * Author：ChenME
+ * Date：2016/9/14
+ * Email：ibelieve1210@163.com
  */
 public class TopBar extends RelativeLayout {
     private Context mContext;
@@ -101,13 +105,13 @@ public class TopBar extends RelativeLayout {
         LayoutParams mLeftParams = new LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.MATCH_PARENT);
         mLeftParams.addRule(RelativeLayout.ALIGN_PARENT_LEFT, TRUE);
         tv_leftBtn.setGravity(Gravity.CENTER);
-        tv_leftBtn.setPadding(10,0,0,0);
+        tv_leftBtn.setPadding(10, 0, 0, 0);
         addView(tv_leftBtn, mLeftParams);
 
         LayoutParams mRightParams = new LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.MATCH_PARENT);
         mRightParams.addRule(RelativeLayout.ALIGN_PARENT_RIGHT, TRUE);
         tv_rightBtn.setGravity(Gravity.CENTER);
-        tv_rightBtn.setPadding(0,0,10,0);
+        tv_rightBtn.setPadding(0, 0, 10, 0);
         addView(tv_rightBtn, mRightParams);
 
         LayoutParams mTitleParams = new LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.MATCH_PARENT);

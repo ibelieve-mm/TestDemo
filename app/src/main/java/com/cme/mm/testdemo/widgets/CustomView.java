@@ -1,12 +1,17 @@
 package com.cme.mm.testdemo.widgets;
 
 import android.content.Context;
+import android.graphics.Canvas;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.View;
 
 /**
- * Created by Administrator on 2016/9/12.
+ * Descriptions：该类列出了自定义控件中常被重写的方法
+ * <p/>
+ * Author：ChenME
+ * Date：2016/9/14
+ * Email：ibelieve1210@163.com
  */
 public class CustomView extends View {
 
@@ -20,6 +25,15 @@ public class CustomView extends View {
 
     public CustomView(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
+    }
+
+    /**
+     * 所以的绘制工作都在该方法处理
+     * @param canvas
+     */
+    @Override
+    protected void onDraw(Canvas canvas) {
+        super.onDraw(canvas);
     }
 
     /**
