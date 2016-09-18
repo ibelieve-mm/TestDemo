@@ -2,8 +2,12 @@ package com.cme.mm.testdemo.widgets.full_custom.group;
 
 import android.content.Context;
 import android.util.AttributeSet;
+import android.util.DisplayMetrics;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.WindowManager;
+import android.widget.Scroller;
 
 /**
  * Descriptions：仿ScrollView，在滑动过程增加黏性功能
@@ -14,17 +18,32 @@ import android.view.ViewGroup;
  */
 public class CustomScrollView extends ViewGroup {
 
+    private int mScreenHeight;//屏幕的高
+    private Scroller mScroller;
+    private int mLastY;
+    private int mStart;
+
     public CustomScrollView(Context context) {
         this(context, null);
     }
 
     public CustomScrollView(Context context, AttributeSet attrs) {
         super(context, attrs);
+        initView(context);
     }
 
-    @Override
-    protected void onFinishInflate() {
-        super.onFinishInflate();
+    public CustomScrollView(Context context, AttributeSet attrs, int defStyleAttr) {
+        super(context, attrs, defStyleAttr);
+        initView(context);
+    }
+
+    private void initView(Context context) {
+        WindowManager wm = (WindowManager) context.getSystemService(Context.WINDOW_SERVICE);
+        DisplayMetrics dm = new DisplayMetrics();
+        wm.getDefaultDisplay().getMetrics(dm);
+        mScreenHeight = dm.heightPixels;
+
+        mScroller = new Scroller(context);
     }
 
     @Override
@@ -42,13 +61,77 @@ public class CustomScrollView extends ViewGroup {
     protected void onLayout(boolean changed, int l, int t, int r, int b) {
         int childCount = getChildCount();
         MarginLayoutParams mlp = (MarginLayoutParams) getLayoutParams();
-        mlp.height = getHeight() * childCount;
+        mlp.height = mScreenHeight * childCount;
         setLayoutParams(mlp);
         for (int i = 0; i < childCount; i++) {
             View child = getChildAt(i);
             if (child.getVisibility() != View.GONE) {
-                child.layout(l, i * getHeight(), r, (i + 1) * getHeight());
+                child.layout(l, i * mScreenHeight, r, (i + 1) * mScreenHeight);
             }
+        }
+    }
+
+    @Override
+    public boolean onTouchEvent(MotionEvent event) {
+        int y = (int) event.getY();
+        switch (event.getAction()) {
+            case MotionEvent.ACTION_DOWN:
+                mLastY = y;
+                mStart = getScrollY();
+                break;
+            case MotionEvent.ACTION_MOVE:
+                if (!mScroller.isFinished()) {
+                    mScroller.abortAnimation();
+                }
+                int dy = mLastY - y;
+                if (getScrollY() < 0) {
+                    dy = 0;
+                }
+                if (getScrollY() > getHeight() - mScreenHeight) {
+                    dy = 0;
+                }
+                scrollBy(0, dy);
+                mLastY = y;
+                break;
+            case MotionEvent.ACTION_UP:
+                int dScrollY = checkAlignment();
+                if (dScrollY > 0) {
+                    if (dScrollY < mScreenHeight / 3) {
+                        mScroller.startScroll(0, getScrollY(), 0, -dScrollY);
+                    } else {
+                        mScroller.startScroll(0, getScrollY(), 0, mScreenHeight - dScrollY);
+                    }
+                } else {
+                    if (-dScrollY < mScreenHeight / 3) {
+                        mScroller.startScroll(0, getScrollY(), 0, -dScrollY);
+                    } else {
+                        mScroller.startScroll(0, getScrollY(), 0, -mScreenHeight - dScrollY);
+                    }
+                }
+                break;
+        }
+        return true;
+    }
+
+    private int checkAlignment() {
+        int end = getScrollY();
+        boolean isUp = ((end - mStart) > 0);
+        int lastPre = end % mScreenHeight;
+        int lastNext = mScreenHeight - lastPre;
+        if (isUp) {
+            //向上
+            return lastPre;
+        } else {
+            return -lastNext;
+        }
+    }
+
+    @Override
+    public void computeScroll() {
+        super.computeScroll();
+        if(mScroller.computeScrollOffset()){
+            scrollTo(0,mScroller.getCurrY());
+            postInvalidate();
         }
     }
 }

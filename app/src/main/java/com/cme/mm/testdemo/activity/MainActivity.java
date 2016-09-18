@@ -1,11 +1,12 @@
 package com.cme.mm.testdemo.activity;
 
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 
-import com.cme.mm.testdemo.App;
 import com.cme.mm.testdemo.R;
-import com.cme.mm.testdemo.widgets.complex.TopBar;
+
+import org.androidannotations.annotations.AfterViews;
+import org.androidannotations.annotations.Click;
+import org.androidannotations.annotations.EActivity;
 
 /**
  * Descriptions：
@@ -14,25 +15,22 @@ import com.cme.mm.testdemo.widgets.complex.TopBar;
  * Date：2016/9/14
  * Email：ibelieve1210@163.com
  */
+@EActivity(R.layout.activity_main)
 public class MainActivity extends AppCompatActivity {
 
-    private TopBar topBar;
+    @AfterViews
+    void onPageStart() {
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        topBar = (TopBar) findViewById(R.id.topBar);
-        topBar.setTopbarClickListener(new TopBar.TopbarClickListener() {
-            @Override
-            public void leftBtnClick() {
-                App.toast("点击了左边的按钮");
-            }
-
-            @Override
-            public void rightBtnClick() {
-                App.toast("右边的按钮被点击了~~");
-            }
-        });
     }
+
+    @Click(R.id.tv_toCustomView)
+    void toCustomViewPage() {
+        CustomViewTestActivity_.intent(this).start();
+    }
+
+    @Click(R.id.tv_toCustomScrollView)
+    void toCustomScrollViewPage() {
+        CustomScrollViewTestActivity_.intent(this).start();
+    }
+
 }

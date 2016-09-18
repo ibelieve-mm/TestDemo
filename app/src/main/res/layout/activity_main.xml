@@ -1,47 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:cme="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".MainActivity">
+        android:background="@color/common_gray_bg"
+    android:orientation="vertical">
 
-    <com.cme.mm.testdemo.widgets.full_custom.AudioBarView
-        android:layout_width="match_parent"
-        android:background="#4123"
-        android:layout_height="300dp" />
+    <TextView
+        style="@style/DefaultTextView"
+        android:id="@+id/tv_toCustomView"
+        android:text="自定义控件测试"/>
 
-    <com.cme.mm.testdemo.widgets.complex.TopBar
-        android:id="@+id/topBar"
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        cme:leftText="左边按钮"
-        cme:rightText="右边按钮"
-        cme:titleTextTB="自定义标题栏控件" />
-
-    <com.cme.mm.testdemo.widgets.CustomView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="#123" />
-
-    <com.cme.mm.testdemo.widgets.CustomView
-        android:layout_width="100px"
-        android:layout_height="50px"
-        android:background="#654" />
-
-    <com.cme.mm.testdemo.widgets.CustomView
-        android:layout_width="100dp"
-        android:layout_height="50dp"
-        android:background="#123" />
-
-
-
-    <!--<com.cme.mm.testdemo.widgets.TextView.XTextView1-->
-    <!--android:layout_width="wrap_content"-->
-    <!--android:layout_height="wrap_content"-->
-    <!--android:padding="10px"-->
-    <!--android:text="你好定制TextView"-->
-    <!--android:textColor="#ff9352"-->
-    <!--android:textSize="18sp" />-->
+    <TextView
+        style="@style/DefaultTextView"
+        android:id="@+id/tv_toCustomScrollView"
+        android:text="自定义黏性ScrollView测试"/>
 </LinearLayout>

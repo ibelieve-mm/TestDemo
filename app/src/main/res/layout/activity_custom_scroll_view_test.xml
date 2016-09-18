@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.cme.mm.testdemo.widgets.full_custom.group.CustomScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:src="@mipmap/test1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <ImageView
+        android:src="@mipmap/test2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <ImageView
+        android:src="@mipmap/test3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <ImageView
+        android:src="@mipmap/test4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</com.cme.mm.testdemo.widgets.full_custom.group.CustomScrollView>
