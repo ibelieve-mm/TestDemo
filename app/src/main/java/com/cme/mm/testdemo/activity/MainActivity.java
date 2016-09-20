@@ -10,7 +10,7 @@ import org.androidannotations.annotations.EActivity;
 
 /**
  * Descriptions：
- * <p/>
+ * <p>
  * Author：ChenME
  * Date：2016/9/14
  * Email：ibelieve1210@163.com
@@ -31,6 +31,11 @@ public class MainActivity extends AppCompatActivity {
     @Click(R.id.tv_toCustomScrollView)
     void toCustomScrollViewPage() {
         CustomScrollViewTestActivity_.intent(this).start();
+    }
+
+    @Click(R.id.tv_toDragView)
+    void toDragViewPage() {
+        DragViewTestActivity_.intent(this).start();
     }
 
 }

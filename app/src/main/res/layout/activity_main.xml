@@ -14,4 +14,9 @@
         android:id="@+id/tv_toCustomScrollView"
         style="@style/DefaultTextView"
         android:text="自定义黏性ScrollView测试" />
+
+    <TextView
+        android:id="@+id/tv_toDragView"
+        style="@style/DefaultTextView"
+        android:text="拖拽View测试" />
 </LinearLayout>
