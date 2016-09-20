@@ -8,8 +8,8 @@
     <!-- 自定义音频图-->
     <com.cme.mm.testdemo.widgets.full_custom.AudioBarView
         android:layout_width="match_parent"
-        android:background="#4123"
-        android:layout_height="300dp" />
+        android:layout_height="300dp"
+        android:background="#4123" />
 
     <!-- 自定义标题栏-->
     <com.cme.mm.testdemo.widgets.complex.TopBar
@@ -38,21 +38,31 @@
         android:layout_height="50dp"
         android:background="#123" />
 
-    <!-- 自定义TextView 仿苹果锁屏页面中的“滑动来解锁”-->
-    <com.cme.mm.testdemo.widgets.text_view.XTextView1
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="10px"
-        android:text="滑动来解锁"
-        android:textColor="#ff9352"
-        android:textSize="18sp" />
+        android:background="@color/common_gray_bg"
+        android:orientation="vertical">
 
-    <!-- 自定义TextView 给TextView添加自定义背景-->
-    <com.cme.mm.testdemo.widgets.text_view.XTextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:padding="10px"
-        android:text="自定义背景TextView"
-        android:textColor="#1C8CEC"
-        android:textSize="18sp" />
+        <!-- 自定义TextView 仿苹果锁屏页面中的“滑动来解锁”-->
+        <com.cme.mm.testdemo.widgets.text_view.XTextView1
+            android:id="@+id/xtv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10px"
+            android:text="滑动来解锁"
+            android:textColor="#ff9352"
+            android:textSize="18sp" />
+
+
+        <!-- 自定义TextView 给TextView添加自定义背景-->
+        <com.cme.mm.testdemo.widgets.text_view.XTextView
+            android:id="@+id/view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10px"
+            android:text="自定义背景TextView"
+            android:textColor="#1C8CEC"
+            android:textSize="18sp" />
+    </LinearLayout>
 </LinearLayout>
