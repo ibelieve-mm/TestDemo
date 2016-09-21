@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cme="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- 自定义音频图-->
+    <com.cme.mm.testdemo.widgets.full_custom.AudioBarView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="#4123" />
+
+    <!-- 自定义标题栏-->
+    <com.cme.mm.testdemo.widgets.complex.TopBar
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        cme:leftText="左边按钮"
+        cme:rightText="右边按钮"
+        cme:titleTextTB="自定义标题栏控件" />
+
+    <!-- 自定义控件测试 默认大小100px 50px-->
+    <com.cme.mm.testdemo.widgets.CustomView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#123" />
+
+    <!-- 自定义控件测试 设定大小100px 50px-->
+    <com.cme.mm.testdemo.widgets.CustomView
+        android:layout_width="100px"
+        android:layout_height="50px"
+        android:background="#654" />
+
+    <!-- 自定义控件测试 设定大小100dp 50dp-->
+    <com.cme.mm.testdemo.widgets.CustomView
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:background="#123" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_common_gray_bg"
+        android:orientation="vertical">
+
+        <!-- 自定义TextView 仿苹果锁屏页面中的“滑动来解锁”-->
+        <com.cme.mm.testdemo.widgets.text_view.XTextView1
+            android:id="@+id/xtv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10px"
+            android:text="滑动来解锁"
+            android:textColor="#ff9352"
+            android:textSize="18sp" />
+
+
+        <!-- 自定义TextView 给TextView添加自定义背景-->
+        <com.cme.mm.testdemo.widgets.text_view.XTextView
+            android:id="@+id/view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10px"
+            android:text="自定义背景TextView"
+            android:textColor="#1C8CEC"
+            android:textSize="18sp" />
+    </LinearLayout>
+</LinearLayout>
