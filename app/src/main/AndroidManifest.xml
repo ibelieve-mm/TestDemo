@@ -20,6 +20,7 @@
         <activity android:name=".activity.CustomViewTestActivity_" />
         <activity android:name=".activity.CustomScrollViewTestActivity_" />
         <activity android:name=".activity.DragViewTestActivity_" />
+        <activity android:name=".activity.DragViewGroupTestActivity_" />
     </application>
 
 </manifest>

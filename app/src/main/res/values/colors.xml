@@ -4,6 +4,7 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
 
-    <color name="common_green">#04b00f</color>
-    <color name="common_gray_bg">#d4d4d4</color>
+    <color name="color_common_green">#04b00f</color>
+    <color name="color_common_gray_bg">#d4d4d4</color>
+    <color name="color_other_bg2">#3F51B5</color>
 </resources>

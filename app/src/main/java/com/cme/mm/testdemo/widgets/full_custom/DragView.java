@@ -57,12 +57,10 @@ public class DragView extends View {
         }
     }
 
-
     @Override
     public boolean onTouchEvent(MotionEvent event) {
         int rawX = (int) event.getRawX();
         int rawY = (int) event.getRawY();
-
 
         switch (event.getAction()) {
             case MotionEvent.ACTION_DOWN:

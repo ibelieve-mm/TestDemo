@@ -7,5 +7,5 @@
     <com.cme.mm.testdemo.widgets.full_custom.DragView
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:background="@color/common_green" />
+        android:background="@color/color_common_green" />
 </LinearLayout>

@@ -20,7 +20,6 @@ public class MainActivity extends AppCompatActivity {
 
     @AfterViews
     void onPageStart() {
-
     }
 
     @Click(R.id.tv_toCustomView)
@@ -38,4 +37,8 @@ public class MainActivity extends AppCompatActivity {
         DragViewTestActivity_.intent(this).start();
     }
 
+    @Click(R.id.tv_toDragViewGroup)
+    void toDragViewGroupPage() {
+        DragViewGroupTestActivity_.intent(this).start();
+    }
 }
