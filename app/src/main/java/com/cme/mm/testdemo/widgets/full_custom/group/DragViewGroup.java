@@ -78,6 +78,30 @@ public class DragViewGroup extends FrameLayout {
                     ViewCompat.postInvalidateOnAnimation(DragViewGroup.this);
                 }
             }
+
+            @Override
+            public void onViewCaptured(View capturedChild, int activePointerId) {
+                super.onViewCaptured(capturedChild, activePointerId);
+                /**
+                 * 这个事件在用户触摸到View后回调
+                 */
+            }
+
+            @Override
+            public void onViewDragStateChanged(int state) {
+                super.onViewDragStateChanged(state);
+                /**
+                 * 这个事件在拖拽状态改变时回调，比如idle，dragging
+                 */
+            }
+
+            @Override
+            public void onViewPositionChanged(View changedView, int left, int top, int dx, int dy) {
+                super.onViewPositionChanged(changedView, left, top, dx, dy);
+                /**
+                 * 这个事件在位置改变时回调，常用于滑动时更改scale进行缩放等效果
+                 */
+            }
         });
     }
 
