@@ -1,14 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.cme.mm.testdemo.widgets.full_custom.group.DragViewGroup
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+<com.cme.mm.testdemo.widgets.full_custom.group.DragViewGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/color_other_bg2"/>
-    <FrameLayout
+        android:background="@color/color_other_bg2" />
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/color_common_gray_bg"/>
+        android:background="@color/color_common_gray_bg"
+        android:orientation="vertical"
+        android:weightSum="1">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/rect_with_round_corner" />
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/layer_test" />
+
+        <Button
+            android:layout_width="157dp"
+            android:layout_height="50dp"
+            android:background="@drawable/selector_test" />
+    </LinearLayout>
 </com.cme.mm.testdemo.widgets.full_custom.group.DragViewGroup>
