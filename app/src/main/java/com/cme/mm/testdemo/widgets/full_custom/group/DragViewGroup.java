@@ -8,6 +8,9 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.widget.FrameLayout;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Descriptions：利用ViewDragHelper实现侧滑菜单
  * <p>
@@ -102,6 +105,7 @@ public class DragViewGroup extends FrameLayout {
                  * 这个事件在位置改变时回调，常用于滑动时更改scale进行缩放等效果
                  */
             }
+
         });
     }
 
@@ -110,6 +114,7 @@ public class DragViewGroup extends FrameLayout {
         super.onFinishInflate();
         mMenuView = getChildAt(0);
         mMainView = getChildAt(1);
+
     }
 
     /**
