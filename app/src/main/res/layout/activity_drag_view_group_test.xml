@@ -14,10 +14,11 @@
         android:background="@color/color_common_gray_bg"
         android:orientation="vertical"
         android:weightSum="1">
+
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:scaleType="centerCrop"/>
+            android:scaleType="centerCrop" />
 
         <TextView
             android:layout_width="200dp"
