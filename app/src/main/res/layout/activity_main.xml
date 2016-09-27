@@ -1,27 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/color_common_gray_bg"
-    android:orientation="vertical">
+    android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/tv_toCustomView"
-        style="@style/DefaultTextView"
-        android:text="自定义控件测试" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_common_gray_bg"
+        android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/tv_toCustomScrollView"
-        style="@style/DefaultTextView"
-        android:text="自定义黏性ScrollView测试" />
+        <TextView
+            android:id="@+id/tv_toCustomView"
+            style="@style/DefaultTextView"
+            android:text="自定义控件测试" />
 
-    <TextView
-        android:id="@+id/tv_toDragView"
-        style="@style/DefaultTextView"
-        android:text="拖拽View测试" />
+        <TextView
+            android:id="@+id/tv_toCustomScrollView"
+            style="@style/DefaultTextView"
+            android:text="自定义黏性ScrollView测试" />
 
-    <TextView
-        android:id="@+id/tv_toDragViewGroup"
-        style="@style/DefaultTextView"
-        android:text="拖拽ViewGroup测试" />
-</LinearLayout>
+        <TextView
+            android:id="@+id/tv_toDragView"
+            style="@style/DefaultTextView"
+            android:text="拖拽View测试" />
+
+        <TextView
+            android:id="@+id/tv_toDragViewGroup"
+            style="@style/DefaultTextView"
+            android:text="拖拽ViewGroup测试" />
+
+        <TextView
+            android:id="@+id/tv_toChangeImgHueSaturationLumActivity"
+            style="@style/DefaultTextView"
+            android:text="改变图片的色调、饱和度、亮度" />
+    </LinearLayout>
+</ScrollView>

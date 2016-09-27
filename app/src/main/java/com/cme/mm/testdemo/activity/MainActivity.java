@@ -41,4 +41,9 @@ public class MainActivity extends AppCompatActivity {
     void toDragViewGroupPage() {
         DragViewGroupTestActivity_.intent(this).start();
     }
+
+    @Click(R.id.tv_toChangeImgHueSaturationLumActivity)
+    void oChangeImgHueSaturationLumPage() {
+        ChangImgHueSaturationLumActivity_.intent(this).start();
+    }
 }

@@ -21,6 +21,7 @@
         <activity android:name=".activity.CustomScrollViewTestActivity_" />
         <activity android:name=".activity.DragViewTestActivity_" />
         <activity android:name=".activity.DragViewGroupTestActivity_" />
+        <activity android:name=".activity.ChangImgHueSaturationLumActivity_" />
     </application>
 
 </manifest>
