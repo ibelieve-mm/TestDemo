@@ -17,13 +17,14 @@ import java.util.Date;
  * Date：2016/9/14
  * Email：ibelieve1210@163.com
  */
-public class App  extends Application{
+public class App extends Application {
 
-    private static Toast toast = null;public static Context mContext;
+    public static Context mContext;
+    private static Toast toast = null;
     private static Handler mHandler = new Handler() {
         @Override
         public void handleMessage(Message msg) {
-            if (toast == null) {
+            if (null == toast) {
                 toast = Toast.makeText(mContext, msg.obj.toString(), Toast.LENGTH_SHORT);
             } else {
                 toast.setText(msg.obj.toString());
@@ -65,5 +66,4 @@ public class App  extends Application{
         SimpleDateFormat sdf = new SimpleDateFormat(format);
         Log.i("cme", sdf.format(new Date()) + " ~~~ " + msg);
     }
-
 }
