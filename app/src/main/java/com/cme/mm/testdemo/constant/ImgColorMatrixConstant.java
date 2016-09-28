@@ -1,7 +1,7 @@
 package com.cme.mm.testdemo.constant;
 
 /**
- * Descriptions：
+ * Descriptions：图片特效矩阵常量
  * <p>
  * Author：ChenME
  * Date：2016/9/28
