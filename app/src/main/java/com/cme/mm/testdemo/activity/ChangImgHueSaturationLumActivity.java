@@ -63,17 +63,22 @@ public class ChangImgHueSaturationLumActivity extends AppCompatActivity {
     @SeekBarProgressChange(R.id.sb_hue)
     void hueChanged(SeekBar seekBar, int progress, boolean fromUser) {
         mHue = (progress - MID_VALUE) * 1.0f / MID_VALUE * 180;
-        iv_InuYasha.setImageBitmap(imageHelper.changeImgHue(bitMap,mHue));
+//        iv_InuYasha.setImageBitmap(imageHelper.changeImgHueOnly(bitMap, mHue));//只改变色调
+        iv_InuYasha.setImageBitmap(imageHelper.changeImgHueSaturationLum(bitMap, mHue, mSaturation, mLum));
     }
 
     @SeekBarProgressChange(R.id.sb_saturation)
     void saturationChanged(SeekBar seekBar, int progress, boolean fromUser) {
         mSaturation = progress * 1.0f / MID_VALUE;
+//        iv_InuYasha.setImageBitmap(imageHelper.changImgSaturationOnly(bitMap, mSaturation));//只改变饱和度
+        iv_InuYasha.setImageBitmap(imageHelper.changeImgHueSaturationLum(bitMap, mHue, mSaturation, mLum));
     }
 
     @SeekBarProgressChange(R.id.sb_lum)
     void lumChanged(SeekBar seekBar, int progress, boolean fromUser) {
         mLum = progress * 1.0f / MID_VALUE;
+//        iv_InuYasha.setImageBitmap(imageHelper.changImgLumOnly(bitMap, mLum));//只改变亮度
+        iv_InuYasha.setImageBitmap(imageHelper.changeImgHueSaturationLum(bitMap, mHue, mSaturation, mLum));
     }
 
 }
