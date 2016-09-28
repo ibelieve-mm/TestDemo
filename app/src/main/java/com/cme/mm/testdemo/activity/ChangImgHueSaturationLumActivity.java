@@ -80,5 +80,4 @@ public class ChangImgHueSaturationLumActivity extends AppCompatActivity {
 //        iv_InuYasha.setImageBitmap(imageHelper.changImgLumOnly(bitMap, mLum));//只改变亮度
         iv_InuYasha.setImageBitmap(imageHelper.changeImgHueSaturationLum(bitMap, mHue, mSaturation, mLum));
     }
-
 }
