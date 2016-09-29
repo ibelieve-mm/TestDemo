@@ -68,5 +68,4 @@ public class ImgColorMatrixConstant {
             -0.062f, -0.122f, 1.483f, 0, -0.02f,
             0, 0, 0, 1, 0
     };
-
 }

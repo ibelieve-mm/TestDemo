@@ -51,4 +51,9 @@ public class MainActivity extends AppCompatActivity {
     void oChangeImgColorMatrixPage() {
         ChangeImageColorMatrixActivity_.intent(this).start();
     }
+
+    @Click(R.id.tv_toChangeImgPixelsActivity)
+    void oChangeImgPixelsPage() {
+        ChangeImagePixelsActivity_.intent(this).start();
+    }
 }

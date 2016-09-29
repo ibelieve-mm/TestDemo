@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+
+        <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:src="@mipmap/inuyasha" />
+
+        <ImageView
+            android:id="@+id/iv_InuYasha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_negative"
+            style="@style/DefaultBtn"
+            android:text="底片效果" />
+
+        <Button
+            android:id="@+id/btn_oldImage"
+            style="@style/DefaultBtn"
+            android:text="老照片效果" />
+
+        <Button
+            android:id="@+id/btn_emboss"
+            style="@style/DefaultBtn"
+            android:text="浮雕效果" />
+    </LinearLayout>
+</RelativeLayout>

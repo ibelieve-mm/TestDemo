@@ -37,6 +37,11 @@
         <TextView
             android:id="@+id/tv_toChangeImgColorMatrixActivity"
             style="@style/DefaultTextView"
-            android:text="图像特效处理" />
+            android:text="图像特效处理之ColorMatrix" />
+
+        <TextView
+            android:id="@+id/tv_toChangeImgPixelsActivity"
+            style="@style/DefaultTextView"
+            android:text="图像特效处理之像素处理" />
     </LinearLayout>
 </ScrollView>
