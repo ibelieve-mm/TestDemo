@@ -24,6 +24,7 @@
         <activity android:name=".activity.ChangImageHueSaturationLumActivity_" />
         <activity android:name=".activity.ChangeImageColorMatrixActivity_" />
         <activity android:name=".activity.ChangeImagePixelsActivity_" />
+        <activity android:name=".activity.ChangeImagePositionMatrixActivity_" />
     </application>
 
 </manifest>

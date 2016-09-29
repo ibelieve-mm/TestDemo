@@ -56,4 +56,9 @@ public class MainActivity extends AppCompatActivity {
     void oChangeImgPixelsPage() {
         ChangeImagePixelsActivity_.intent(this).start();
     }
+
+    @Click(R.id.tv_toChangeImgPositionMatrixActivity)
+    void oChangeImgPositionMatrixPage() {
+        ChangeImagePositionMatrixActivity_.intent(this).start();
+    }
 }

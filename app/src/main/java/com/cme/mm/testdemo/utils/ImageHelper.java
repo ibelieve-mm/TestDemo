@@ -144,6 +144,17 @@ public class ImageHelper {
 
         int[] oldPx = new int[width * height];
         int[] newPx = new int[width * height];
+
+        /**
+         * bm.getPixels(pixels,offset,stride,x,y,width,height);
+         * pixels：接收位图颜色值的数组
+         * offset：写入到pixels[]中的第一个像素索引值
+         * stride：pixels[]中的行间距
+         * x：从位图中读取的第一个像素的x坐标值
+         * y：从位图中读取的第一个像素的y坐标值
+         * width：从每一行读取的像素宽度
+         * height：读取的行数
+         */
         bm.getPixels(oldPx, 0, width, 0, 0, width, height);
 
         int startIndex = 0;

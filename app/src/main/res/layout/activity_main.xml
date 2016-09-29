@@ -43,5 +43,10 @@
             android:id="@+id/tv_toChangeImgPixelsActivity"
             style="@style/DefaultTextView"
             android:text="图像特效处理之像素处理" />
+
+        <TextView
+            android:id="@+id/tv_toChangeImgPositionMatrixActivity"
+            style="@style/DefaultTextView"
+            android:text="图像特效处理之位置Matrix" />
     </LinearLayout>
 </ScrollView>

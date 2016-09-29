@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:src="@mipmap/inuyasha" />
+
+        <com.cme.mm.testdemo.widgets.full_custom.ImagePositionMatrixView
+            android:id="@+id/ipm_InuYasha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <GridLayout
+            android:id="@+id/gl_positionMatrix"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:columnCount="3"
+            android:rowCount="3" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_ok"
+                style="@style/DefaultBtn"
+                android:text="确  认" />
+
+            <Button
+                android:id="@+id/btn_reset"
+                style="@style/DefaultBtn"
+                android:text="重  置" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_translate"
+                style="@style/DefaultBtn"
+                android:text="平移 (100px, 50px)" />
+
+            <Button
+                android:id="@+id/btn_scale"
+                style="@style/DefaultBtn"
+                android:text="缩放 (2倍, 3倍)" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_skew"
+                style="@style/DefaultBtn"
+                android:text="错切 (X轴2倍)" />
+
+            <Button
+                android:id="@+id/btn_rotate"
+                style="@style/DefaultBtn"
+                android:text="顺时针旋转30°" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

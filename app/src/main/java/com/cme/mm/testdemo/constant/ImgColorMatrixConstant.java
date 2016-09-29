@@ -1,13 +1,25 @@
 package com.cme.mm.testdemo.constant;
 
 /**
- * Descriptions：图片特效矩阵常量
+ * Descriptions：图片颜色矩阵常量
  * <p>
  * Author：ChenME
  * Date：2016/9/28
  * Email：ibelieve1210@163.com
  */
 public class ImgColorMatrixConstant {
+    /**
+     * 矩阵
+     * |a,b,c,d,e|
+     * |f,g,h,i,j|
+     * |k,l,m,n,o|
+     * |p,q,r,s,t|
+     *
+     * 第1行控制红色
+     * 第2行控制绿色
+     * 第3行控制蓝色
+     * 第4行控制透明度
+     */
 
     /**
      * 正常效果矩阵
