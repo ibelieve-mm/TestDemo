@@ -23,7 +23,7 @@ import org.androidannotations.annotations.ViewById;
  * Email：ibelieve1210@163.com
  */
 @EActivity(R.layout.activity_change_img_hue_saturation_lum)
-public class ChangImgHueSaturationLumActivity extends AppCompatActivity {
+public class ChangImageHueSaturationLumActivity extends AppCompatActivity {
 
     @Bean(ImageHelper.class)
     ImageHelper imageHelper;

@@ -62,7 +62,7 @@ public class ImgColorMatrixConstant {
     /**
      * 高饱和度效果矩阵
      */
-    public static final float[] COLOR_MATRIX_HIGH_SATURATION= {
+    public static final float[] COLOR_MATRIX_HIGH_SATURATION = {
             1.438f, -0.122f, -0.016f, 0, -0.03f,
             -0.062f, 1.378f, -0.016f, 0, -0.05f,
             -0.062f, -0.122f, 1.483f, 0, -0.02f,

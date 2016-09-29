@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_InuYasha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <GridLayout
+        android:id="@+id/gl_colorMatrix"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:columnCount="5"
+        android:rowCount="4" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_ok"
+            style="@style/DefaultBtn"
+            android:text="确  认" />
+
+        <Button
+            android:id="@+id/btn_reset"
+            style="@style/DefaultBtn"
+            android:text="重  置" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_grayLevelImage"
+            style="@style/DefaultBtn"
+            android:text="灰度" />
+
+        <Button
+            android:id="@+id/btn_reverseImage"
+            style="@style/DefaultBtn"
+            android:text="图像反转" />
+
+        <Button
+            android:id="@+id/btn_reminiscence"
+            style="@style/DefaultBtn"
+            android:text="怀旧效果" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_discoloration"
+            style="@style/DefaultBtn"
+            android:text="去色效果" />
+
+        <Button
+            android:id="@+id/btn_highSaturation"
+            style="@style/DefaultBtn"
+            android:text="高饱和度效果" />
+    </LinearLayout>
+</LinearLayout>

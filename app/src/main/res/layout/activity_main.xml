@@ -33,5 +33,10 @@
             android:id="@+id/tv_toChangeImgHueSaturationLumActivity"
             style="@style/DefaultTextView"
             android:text="改变图片的色调、饱和度、亮度" />
+
+        <TextView
+            android:id="@+id/tv_toChangeImgColorMatrixActivity"
+            style="@style/DefaultTextView"
+            android:text="图像特效处理" />
     </LinearLayout>
 </ScrollView>

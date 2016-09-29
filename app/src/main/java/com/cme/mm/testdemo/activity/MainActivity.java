@@ -44,6 +44,11 @@ public class MainActivity extends AppCompatActivity {
 
     @Click(R.id.tv_toChangeImgHueSaturationLumActivity)
     void oChangeImgHueSaturationLumPage() {
-        ChangImgHueSaturationLumActivity_.intent(this).start();
+        ChangImageHueSaturationLumActivity_.intent(this).start();
+    }
+
+    @Click(R.id.tv_toChangeImgColorMatrixActivity)
+    void oChangeImgColorMatrixPage() {
+        ChangeImageColorMatrixActivity_.intent(this).start();
     }
 }
