@@ -2,19 +2,12 @@ package com.cme.mm.testdemo.activity;
 
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import android.graphics.Canvas;
-import android.graphics.ColorMatrix;
-import android.graphics.ColorMatrixColorFilter;
 import android.graphics.Matrix;
-import android.graphics.Paint;
 import android.support.v7.app.AppCompatActivity;
-import android.view.View;
 import android.widget.EditText;
 import android.widget.GridLayout;
-import android.widget.ImageView;
 
 import com.cme.mm.testdemo.R;
-import com.cme.mm.testdemo.constant.ImgColorMatrixConstant;
 import com.cme.mm.testdemo.constant.ImgPositionMatrixConstant;
 import com.cme.mm.testdemo.utils.DisplayUtil;
 import com.cme.mm.testdemo.widgets.full_custom.ImagePositionMatrixView;

@@ -14,9 +14,9 @@
         android:background="@color/color_common_gray_bg"
         android:orientation="vertical">
 
-        <com.cme.mm.testdemo.widgets.full_custom.LayerTestView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+        <!--<com.cme.mm.testdemo.widgets.full_custom.LayerTestView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"/>-->
 
         <ImageView
             android:layout_width="wrap_content"
@@ -39,8 +39,8 @@
             android:layout_height="50dp"
             android:background="@drawable/selector_test" />
 
-        <!--<com.cme.mm.testdemo.widgets.full_custom.ClockViewSelf-->
-            <!--android:layout_width="100dp"-->
-            <!--android:layout_height="100dp" />-->
+        <com.cme.mm.testdemo.widgets.full_custom.ClockViewSelf
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
     </LinearLayout>
 </com.cme.mm.testdemo.widgets.full_custom.group.DragViewGroup>
