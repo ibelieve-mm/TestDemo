@@ -2,4 +2,10 @@
     <!-- Default screen margins, per the Android Design guidelines. -->
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!--ChartView使用-->
+    <dimen name="size_chartAndTextSpace">3dp</dimen>
+    <dimen name="size_text">13sp</dimen>
+    <dimen name="size_padding">13dp</dimen>
+    <!--ChartView使用-->
 </resources>

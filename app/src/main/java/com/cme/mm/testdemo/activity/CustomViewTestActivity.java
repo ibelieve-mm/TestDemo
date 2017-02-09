@@ -6,12 +6,16 @@ import android.view.MotionEvent;
 import com.cme.mm.testdemo.App;
 import com.cme.mm.testdemo.R;
 import com.cme.mm.testdemo.widgets.complex.TopBar;
+import com.cme.mm.testdemo.widgets.full_custom.ChartView;
 import com.cme.mm.testdemo.widgets.text_view.XTextView;
 import com.cme.mm.testdemo.widgets.text_view.XTextView1;
 
 import org.androidannotations.annotations.AfterViews;
 import org.androidannotations.annotations.EActivity;
 import org.androidannotations.annotations.ViewById;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Descriptions：自定义控件的测试Activity
@@ -30,9 +34,14 @@ public class CustomViewTestActivity extends AppCompatActivity {
     @ViewById(R.id.view)
     XTextView view;
 
+    @ViewById(R.id.chartView)
+    ChartView chartView;
+
     @AfterViews
     void onPageStart() {
         setListener();
+
+        setChartView();
 
         int[] xtv1Location = new int[2];
         xtv1.getLocationOnScreen(xtv1Location);//获取整个屏幕的绝对坐标
@@ -42,6 +51,42 @@ public class CustomViewTestActivity extends AppCompatActivity {
 
         App.log("xtv1 Location：(" + xtv1Location[0] + "," + xtv1Location[1] + ")");
         App.log("view Location：(" + xtvLocation[0] + "," + xtvLocation[1] + ")");
+    }
+
+    private void setChartView() {
+        List<Float> list = new ArrayList<>();
+        list.add(23f);
+        list.add(12f);
+        list.add(14f);
+        list.add(90f);
+        list.add(44f);
+        list.add(55f);
+        list.add(50f);
+        list.add(100f);
+        list.add(23f);
+        list.add(76f);
+        list.add(78f);
+        list.add(66f);
+        list.add(89f);
+        list.add(88f);
+        list.add(53f);
+        list.add(65f);
+        list.add(90f);
+        list.add(99f);
+        list.add(76f);
+        list.add(77f);
+        list.add(0f);
+        list.add(2f);
+        list.add(5f);
+        list.add(78f);
+        list.add(99f);
+        list.add(1f);
+        list.add(2f);
+        list.add(0f);
+        list.add(100f);
+        list.add(99f);
+        chartView.setMaxValue(100);
+        chartView.setCurrentValue(list);
     }
 
     @Override
