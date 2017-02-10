@@ -21,7 +21,7 @@ import java.util.Date;
 import java.util.List;
 
 /**
- * Descriptions：模仿音乐播放器中音频条形图
+ * Descriptions：柱状图
  * <p/>
  * Author：ChenME
  * Date：2016/9/14
@@ -38,7 +38,6 @@ public class ChartView extends View {
      * 最大值
      */
     private float maxValue = 1000;
-//    private int maxValueKilo = 1;
 
     /**
      * 画笔
@@ -195,7 +194,6 @@ public class ChartView extends View {
      */
     public void setMaxValue(float maxValue) {
         this.maxValue = maxValue;
-//        this.maxValueKilo = ((int) maxValue / 1000) + 1;
     }
 
     /**
@@ -258,7 +256,7 @@ public class ChartView extends View {
         float textY = getFontHeight(paintText) + chartBottom + pointR + chartAndTextSpace;
         canvas.drawText(startDate, textXLeft, textY, paintText);
         canvas.drawText(endDate, textXRight, textY, paintText);
-//
+
         float maxValueKilo = maxValue/1000;
         canvas.drawText(formatNumber(maxValueKilo), leftAndRightPadding, rulerTextHeight, paintTextRuler);
         canvas.drawText(formatNumber(maxValueKilo * 0.75f), leftAndRightPadding, chartHeight * 0.25f + rulerTextHeight, paintTextRuler);
@@ -301,7 +299,6 @@ public class ChartView extends View {
         list.add(99f);
     }
 
-
     /**
      * 保留固定位数的double数字
      *
@@ -314,7 +311,5 @@ public class ChartView extends View {
         }
         DecimalFormat df = new DecimalFormat(format);
         return df.format(num) + "k";
-//        String floatFormat = df.format(num);
-//        return Float.parseFloat(floatFormat);
     }
 }
