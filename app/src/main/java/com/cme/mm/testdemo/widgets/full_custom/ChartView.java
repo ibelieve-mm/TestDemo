@@ -206,9 +206,18 @@ public class ChartView extends View {
         return (int) (fm.descent - fm.ascent);
     }
 
+//    @Override
+//    protected void onSizeChanged(int w, int h, int oldw, int oldh) {
+//        super.onSizeChanged(w, h, oldw, oldh);
+//
+//
+//    }
+
     @Override
-    protected void onSizeChanged(int w, int h, int oldw, int oldh) {
-        super.onSizeChanged(w, h, oldw, oldh);
+    protected void onDraw(Canvas canvas) {
+        super.onDraw(canvas);
+
+
 
         mWidth = getMeasuredWidth();
         chartWidth = mWidth - rulerTextRightX - leftAndRightPadding;
@@ -216,14 +225,13 @@ public class ChartView extends View {
         pointR = mRectWidth / 2;
         mHeight = getMeasuredHeight();
 
-        chartHeight = mHeight - 3 * chartAndTextSpace - pointR ;
+        chartHeight = mHeight - 3 * chartAndTextSpace - pointR - getFontHeight(paintText);
+//        chartHeight = mHeight - 3 * chartAndTextSpace - pointR ;
         offset = mRectWidth * offsetPercent;
         paint.setAntiAlias(true);
-    }
 
-    @Override
-    protected void onDraw(Canvas canvas) {
-        super.onDraw(canvas);
+
+
 
         float rulerTextHeight = getFontHeight(paintTextRuler);
 
@@ -267,36 +275,36 @@ public class ChartView extends View {
 
 
     private void setDemoChartDataList() {
-        list.add(100f);
-        list.add(12f);
+        list.add(1000f);
+        list.add(120f);
         list.add(14f);
         list.add(90f);
-        list.add(44f);
+        list.add(440f);
         list.add(55f);
         list.add(50f);
         list.add(100f);
-        list.add(23f);
+        list.add(230f);
         list.add(76f);
         list.add(78f);
         list.add(66f);
         list.add(89f);
-        list.add(88f);
+        list.add(808f);
         list.add(53f);
         list.add(65f);
         list.add(90f);
-        list.add(99f);
+        list.add(909f);
         list.add(76f);
-        list.add(77f);
+        list.add(707f);
         list.add(0f);
         list.add(2f);
         list.add(5f);
-        list.add(78f);
+        list.add(708f);
         list.add(99f);
         list.add(1f);
         list.add(2f);
         list.add(0f);
         list.add(100f);
-        list.add(99f);
+        list.add(990f);
     }
 
     /**
