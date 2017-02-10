@@ -5,7 +5,8 @@
 
     <!--ChartView使用-->
     <dimen name="size_chartAndTextSpace">3dp</dimen>
-    <dimen name="size_text">13sp</dimen>
+    <dimen name="size_text">12sp</dimen>
     <dimen name="size_padding">13dp</dimen>
+    <dimen name="size_leftRulerTextWidth">32dp</dimen>
     <!--ChartView使用-->
 </resources>

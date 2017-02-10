@@ -17,7 +17,7 @@
             <com.cme.mm.testdemo.widgets.full_custom.ChartView
                 android:id="@+id/chartView"
                 android:layout_width="match_parent"
-                android:layout_height="200dp"
+                android:layout_height="350dp"
                 android:background="#654" />
 
             <!-- 自定义音频图-->

@@ -55,37 +55,37 @@ public class CustomViewTestActivity extends AppCompatActivity {
 
     private void setChartView() {
         List<Float> list = new ArrayList<>();
-        list.add(23f);
+        list.add(100f);
         list.add(12f);
-        list.add(14f);
-        list.add(90f);
+        list.add(104f);
+        list.add(900f);
         list.add(44f);
-        list.add(55f);
-        list.add(50f);
+        list.add(505f);
+        list.add(500f);
         list.add(100f);
         list.add(23f);
         list.add(76f);
-        list.add(78f);
+        list.add(708f);
         list.add(66f);
         list.add(89f);
         list.add(88f);
-        list.add(53f);
+        list.add(530f);
         list.add(65f);
-        list.add(90f);
-        list.add(99f);
-        list.add(76f);
-        list.add(77f);
+        list.add(900f);
+        list.add(909f);
+        list.add(706f);
+        list.add(770f);
         list.add(0f);
-        list.add(2f);
+        list.add(20f);
         list.add(5f);
-        list.add(78f);
+        list.add(780f);
         list.add(99f);
-        list.add(1f);
-        list.add(2f);
+        list.add(10f);
+        list.add(20f);
         list.add(0f);
-        list.add(100f);
-        list.add(99f);
-        chartView.setMaxValue(100);
+        list.add(1100f);
+        list.add(9090f);
+        chartView.setMaxValue(1100);
         chartView.setCurrentValue(list);
     }
 
