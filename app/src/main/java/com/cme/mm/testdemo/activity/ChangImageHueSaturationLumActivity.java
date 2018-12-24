@@ -81,3 +81,5 @@ public class ChangImageHueSaturationLumActivity extends AppCompatActivity {
         iv_InuYasha.setImageBitmap(imageHelper.changeImgHueSaturationLum(bitMap, mHue, mSaturation, mLum));
     }
 }
+
+
